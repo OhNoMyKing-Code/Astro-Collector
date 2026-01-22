@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Astro Collector — Game STEM</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-wrap">
+    <header class="topbar">
+      <h1>Astro Collector</h1>
+      <div class="hud">
+        <div class="stat">Score: <span id="score">0</span></div>
+        <div class="stat">Lives: <span id="lives">3</span></div>
+        <div class="stat">Wave: <span id="wave">1</span></div>
+      </div>
+    </header>
+
+    <main class="stage">
+      <canvas id="game"></canvas>
+
+      <div id="overlay" class="overlay">
+        <div class="menu">
+          <h2>Astro Collector</h2>
+          <p>Thu thập sample, né tiểu hành tinh. WASD / ←↑→↓ hoặc kéo để di chuyển.</p>
+          <div class="menu-actions">
+            <button id="startBtn">Start</button>
+            <button id="howBtn">Hướng dẫn</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="pauseBtn" class="round-btn">II</div>
+      <div id="touchHint" class="touch-hint">Kéo để di chuyển</div>
+    </main>
+
+    <footer class="footer">Made for STEM — Demo web game</footer>
+  </div>
+
+  <script src="game.js" type="module"></script>
+</body>
+</html>
